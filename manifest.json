@@ -1,0 +1,20 @@
+{
+  "name": "Unpopular Opinion",
+  "version": "1.0",
+  "description": "Every time somebody says: \"Unpopular Opinion:\" it changes it to \"Really popular and accepted opinion\"",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "popularOpinions.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "activeTab"
+  ]
+}
